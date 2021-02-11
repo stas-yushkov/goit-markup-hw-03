@@ -143,6 +143,7 @@ header .logo-part {
   display: inline-block;
   padding-top: 32px;
   padding-bottom: 32px;
+
   /* font-size: 16px; */
   color: var(--secondary-color);
   font-weight: 500;
