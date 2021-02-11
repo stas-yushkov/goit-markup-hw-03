@@ -1,0 +1,195 @@
+/* Transform any text to uppercase */
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* Common styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+} /* end of Common styles */
+
+/* Hero section */
+.hero {
+  background-color: var(--primary-background-color);
+  color: var(--white-color);
+}
+
+.hero-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  letter-spacing: 0.06em;
+}
+
+.hero .button {
+  font-weight: 700;
+  color: currentColor;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  background-color: var(--accent-color);
+  border: none;
+}
+
+.button {
+  font-weight: 500;
+  color: var(--secondary-color);
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  background-color: var(--secondary-background-color);
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--hover-background-color);
+} /* end of Hero section */
+
+/* Logo styles */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  /* letter-spacing: 0.03em; */
+  color: var(--accent-color);
+}
+
+header .logo-part {
+  color: var(--black-color);
+}
+
+.nav-link {
+  color: var(--secondary-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.current-page {
+  color: var(--accent-color);
+}
+
+.current-page:hover,
+.current-page:focus {
+  color: var(--hover-background-color);
+}
+
+.values-title {
+  font-size: 14px;
+  line-height: 1.14;
+  color: var(--secondary-color);
+}
+
+.section-title {
+  font-size: 36px;
+  line-height: 1.17;
+  color: var(--secondary-color);
+}
+
+.command {
+  background-color: var(--secondary-background-color);
+}
+
+.card {
+  background-color: var(--white-color);
+  width: 270px;
+}
+
+.portfolio-item {
+  background-color: var(--white-color);
+  width: 370px;
+}
+
+.portfolio-title {
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 0.06em;
+  line-height: 2;
+  color: var(--secondary-color);
+}
+
+.portfolio-type {
+  font-size: 16px;
+  line-height: 1.87;
+}
+
+.command-link {
+  display: block;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.command-link:hover,
+.command-link:focus {
+  box-shadow: 0px 1px 3px rgba(33, 150, 243, 0.12),
+    0px 1px 1px rgba(33, 150, 243, 0.14), 0px 2px 1px rgba(33, 150, 243, 0.2);
+}
+
+.card-title {
+  color: var(--secondary-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+}
+
+.card-item {
+  color: var(--primary-color);
+  font-size: 16px;
+  line-height: 1.19;
+} /* end of main section */
+
+footer .logo-part {
+  color: var(--white-color);
+} /* end of Logo styles */
+
+footer {
+  background-color: var(--primary-background-color);
+}
+
+footer .address-item {
+  color: var(--address-primary-color);
+  font-weight: 400;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+
+.address-item.map {
+  color: var(--white-color);
+}
+
+.address-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--primary-color);
+}
+
+.address-item:hover,
+.address-item:focus {
+  color: var(--accent-color);
+}
+
+/* TODO: actual width */
+.container {
+  width: 1200px;
+}
