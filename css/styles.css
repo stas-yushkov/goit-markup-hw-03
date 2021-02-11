@@ -28,6 +28,15 @@ body {
   color: var(--primary-color);
 } /* end of Common styles */
 
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 2px dotted red;
+}
+
 /* reset margins for headings & paragraphs */
 h1,
 h2,
@@ -89,6 +98,7 @@ p {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
+
   /* letter-spacing: 0.03em; */
   color: var(--accent-color);
 }
@@ -212,9 +222,4 @@ footer .address-item {
 .address-item:hover,
 .address-item:focus {
   color: var(--accent-color);
-}
-
-/* TODO: actual width */
-.container {
-  width: 1200px;
 }
