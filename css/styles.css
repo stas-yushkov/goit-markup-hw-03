@@ -11,6 +11,7 @@
   --black-color: #000000; /* black-color */
   --primary-background-color: #2f303a; /* primary-background-color footer and hero */
   --card-set-gap: 30px; /* set-gap between cards for adaptive grid */
+  --border-color: #eeeeee; /* Border-color for portfolio */
 }
 
 /* Transform text to uppercase */
@@ -34,7 +35,7 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 2px dotted red;
+  /* outline: 2px dotted red; */
 }
 
 header .container {
@@ -235,10 +236,18 @@ header .logo-part {
 
 .portfolio-item {
   background-color: var(--white-color);
-  width: 370px;
+
+  /* width: 370px; */
+  flex-basis: calc(100% / 3 - var(--card-set-gap));
+
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+
+  /* border: 1px solid var(--border-color); */
 }
 
 .portfolio-title {
+  margin-bottom: 4px;
   font-weight: 700;
   font-size: 18px;
   letter-spacing: 0.06em;
@@ -248,7 +257,15 @@ header .logo-part {
 
 .portfolio-type {
   font-size: 16px;
-  line-height: 1.87;
+  line-height: 1.875;
+}
+
+.portfolio-text {
+  padding: 20px 24px;
+
+  border-bottom: 1px solid var(--border-color);
+  border-left: 1px solid var(--border-color);
+  border-right: 1px solid var(--border-color);
 }
 
 .team-link {
