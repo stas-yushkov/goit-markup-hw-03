@@ -95,7 +95,9 @@ ul {
 }
 
 /* Самая простая техника отзывчивых изображений card-thumb */
-.card-thumb
+.card-thumb {
+  display: block;
+}
 
 /* delletes indents for inline images */
 img {
