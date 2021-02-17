@@ -50,6 +50,10 @@ header .nav {
   align-items: center;
 }
 
+header {
+  border-bottom: 1px solid var(--border-color);
+}
+
 /* reset margins for headings & paragraphs */
 h1,
 h2,
@@ -63,31 +67,49 @@ ul {
   padding: 0;
 }
 
-/* delletes indents for inline images */
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
 /* adaptive grid */
 .card-set {
-  padding: 0;
-  margin: 0;
-  list-style: none;
-
   display: flex;
   flex-wrap: wrap;
 
+  /* reset user agent styles */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  /* compensation for .card margins */
   margin-top: calc(-1 * var(--card-set-gap));
   margin-left: calc(-1 * var(--card-set-gap));
 }
 
-.card-set > .card {
+.card-set-item {
+  /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--card-set-gap)  */
   flex-basis: calc(100% / 4 - var(--card-set-gap));
 
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
+
+  background-color: var(--white-color);
+
+  /* width: 270px; */
+}
+
+/* Самая простая техника отзывчивых изображений card-thumb */
+.card-thumb
+
+/* delletes indents for inline images */
+img {
+  /* убивает зазор в 1/4em строчного элемента картинки просто делая ее блочным */
+  display: block;
+
+  max-width: 100%;
+
+  /* высоту для современных браузеров ставить тут не обязательно */
+  height: auto;
+}
+
+.card-content {
+  padding: ;
 }
 
 /* Hero section */
@@ -208,6 +230,7 @@ header .logo-part {
 }
 
 .values-title {
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
   color: var(--secondary-color);
