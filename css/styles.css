@@ -445,3 +445,19 @@ footer .address-list {
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap); */
 }
+
+/* .wrapper {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  outline: 1px solid teal;
+} */
+
+.values .card {
+  flex-basis: calc(100% / 4 - var(--card-set-gap));
+
+  margin-top: var(--card-set-gap);
+  margin-left: var(--card-set-gap);
+}
