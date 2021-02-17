@@ -83,8 +83,9 @@ ul {
 }
 
 .card-set-item {
-  /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--card-set-gap)  */
-  flex-basis: calc(100% / 4 - var(--card-set-gap));
+  flex-basis: calc(
+    100% / 4 - var(--card-set-gap)
+  ); /* "100% / 4" - where "4" is count of items in row, so every card will got 1/4 parrent width but - var(--card-set-gap)  */
 
   margin-top: var(--card-set-gap);
   margin-left: var(--card-set-gap);
@@ -101,8 +102,7 @@ ul {
 
 /* delletes indents for inline images */
 img {
-  /* убивает зазор в 1/4em строчного элемента картинки просто делая ее блочным */
-  display: block;
+  display: block; /* убивает зазор в 1/4em строчного элемента картинки просто делая ее блочным */
 
   max-width: 100%;
 
